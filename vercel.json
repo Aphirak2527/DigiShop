@@ -1,5 +1,6 @@
 {
-  "buildCommand": "pnpm install --frozen-lockfile=false && pnpm --filter @workspace/premshop run build",
+  "installCommand": "npm install -g pnpm && pnpm install --frozen-lockfile=false",
+  "buildCommand": "pnpm --filter @workspace/premshop run build",
   "outputDirectory": "artifacts/premshop/dist/public",
   "rewrites": [
     {
