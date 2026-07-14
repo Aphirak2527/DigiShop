@@ -1,5 +1,5 @@
 {
-  "installCommand": "npm install -g pnpm@8 && pnpm install --no-frozen-lockfile",
+  "installCommand": "corepack enable && corepack prepare pnpm@10.2.0 --activate && pnpm install --no-frozen-lockfile",
   "buildCommand": "pnpm --filter @workspace/premshop run build",
   "outputDirectory": "artifacts/premshop/dist/public",
   "rewrites": [

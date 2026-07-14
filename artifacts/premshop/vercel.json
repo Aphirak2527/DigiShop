@@ -1,5 +1,5 @@
 {
-  "installCommand": "npm install -g pnpm@8 && cd ../../ && pnpm install --no-frozen-lockfile",
+  "installCommand": "corepack enable && corepack prepare pnpm@10.2.0 --activate && cd ../../ && pnpm install --no-frozen-lockfile",
   "buildCommand": "pnpm run build",
   "outputDirectory": "dist/public",
   "rewrites": [
