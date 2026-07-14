@@ -1,6 +1,6 @@
 {
-  "installCommand": "corepack enable && corepack prepare pnpm@10.2.0 --activate && pnpm install --no-frozen-lockfile",
-  "buildCommand": "pnpm --filter @workspace/premshop run build",
+  "installCommand": "npm install --no-package-lock",
+  "buildCommand": "cd artifacts/premshop && npm install --no-package-lock && npm run build",
   "outputDirectory": "artifacts/premshop/dist/public",
   "rewrites": [
     {
