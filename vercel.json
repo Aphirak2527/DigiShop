@@ -1,0 +1,10 @@
+{
+  "buildCommand": "pnpm install --frozen-lockfile=false && pnpm --filter @workspace/premshop run build",
+  "outputDirectory": "artifacts/premshop/dist/public",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}

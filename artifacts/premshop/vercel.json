@@ -2,7 +2,7 @@
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
   ],
-  "buildCommand": "cd ../../ && pnpm install --frozen-lockfile=false && BASE_PATH=/ pnpm --filter @workspace/premshop run build",
+  "buildCommand": "pnpm install --frozen-lockfile=false && pnpm run build",
   "outputDirectory": "dist/public",
-  "installCommand": "echo 'install handled by buildCommand'"
+  "installCommand": "pnpm install --frozen-lockfile=false"
 }
